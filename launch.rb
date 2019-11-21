@@ -117,7 +117,7 @@ class Shell
     while !args || args.strip != "exit"
       args = $prompt.ask("$ #{$current_dir.path} >") do |q|
         if args
-          q.modify   :downcase
+          # q.modify   :downcase
         end
       end
       command_parse(args) if args
