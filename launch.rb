@@ -177,6 +177,6 @@ class Shell
 end
 
 
-# Tuto.new
+Tuto.new
 @shell = Shell.new
 @shell.display
