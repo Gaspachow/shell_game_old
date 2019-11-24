@@ -17,6 +17,7 @@ require 'colorize'
 require 'time'
 # require 'faker'
 require 'securerandom'
+include ERB::Util
 # require "i18n"
 
 
@@ -82,6 +83,7 @@ end
 Dir["./fake_dirs/*.rb"].each {|file| require_relative file }
 
 require_relative 'populate'
+require_relative 'aide'
 
 populate_users
 populate_planets
@@ -93,6 +95,7 @@ $admin_dir = AdminPwdDir.new
 $admin_part_dir = AdminPartDir.new
 
 $home_dir = HomeDir.new
+$help_dis = HelpCommand.new
 
 
 
@@ -143,7 +146,9 @@ class Shell
     when 'edit'
       $current_dir.edit(cmd_args)
     when 'aide'
-      system "less aide"
+      #system "less aide"
+      File.write('aide_couleur', $help_dis.edit)
+      system "less -r aide_couleur"
     when 'status'
       $current_dir.status
     when 'admin'
@@ -154,6 +159,10 @@ class Shell
       $current_dir.hint
     when 'mail'
       $current_dir.mail(cmd_args)
+    when '42'
+      access_student
+    when 'exit'
+      puts "Exit"
     else
       puts "La commande a mal été formulée."
     end
@@ -174,7 +183,27 @@ class Shell
       end
     end
   end
+
+  def access_student
+    pwd = nil
+    while !pwd
+      pwd = $prompt.mask("Mot de passe Student :")
+      if pwd && pwd != "sadirac"
+        puts "Mauvais mot de passe"
+      else
+        if pwd == "sadirac"
+          puts "ok"
+          $planetes_dir.list.each do |l|
+            l[:target].emailed = true
+          end      
+        end
+      end
+    end
+  end
+
 end
+
+trap "INT" do end
 
 
 Tuto.new

@@ -1,0 +1,73 @@
+[0;94;49m
+
+                                                _,--=--._
+                                              ,'    _    `.
+                                             -    _(_)_o   -
+                                        ____'    /_  _/]    `____
+                                 -=====::(+):::::::::::::::::(+)::=====-
+                                          (+).""""""""""""",(+)
+                                              .           ,
+                                                `  -=-  '
+                      
+        
+                  [0m[0;92;49m                                AIDE[0m[0;31;49m
+                                        Control + q pour quitter[0m
+
+          Tu trouveras ici des informations qui t\'aideront pendant toute l\'enquête.
+          
+          En première partie, tu trouveras des indications sur les étapes à effectuer pour retrouver le voleur et le diamant.
+          
+          En dernière partie, tu trouveras la liste des commnandes importantes que tu pourras utiliser.
+
+    I / LES ETAPES
+        - Aller dans le dossier [0;32;49msecurite[0m, récupérer puis changer le mot de passe d'au moins un administrateur
+
+.        - Aller dans le dossier [0;32;49mplanetes[0m et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.
+
+        - Aller dans le dossier [0;32;49madmin[0m et récupérer le mot de passe qui permettra d'accéder à la gestion du vaisseau.
+
+        - Accéder à la partie [0;32;49mgestion du système[0m avec la commande [0;32;49madmin[0m et faite en sorte de déteriorer les compostants du vaisseau pour enfin, le détruire.
+
+    II / LES COMMANDES
+
+          Utilisation des commandes :
+        
+               ==================================================================
+              |      commande + paramètre1 + ...(paramètre2 + paramètre3)...    |
+               ==================================================================
+        
+          -> [0;32;49mhint[0m : donne des indices de ce qui devrait être fait dans ce dossier.
+        
+          -> [0;32;49mcat[0m : affiche le contenu du fichier passé en paramètre.
+          
+          -> [0;32;49mls[0m : affiche l'ensemble des fichiers contenus dans le dossier courant.
+
+            * Si l'option " -a" est donnée en paramètre, tous les fichiers du repertoire
+              indiqué vont s'afficher, ainsi que les fichiers et dossiers cachés.
+
+          -> [0;32;49mcd[0m : change le dossier courant pour aller dans le
+              dossier passé en paramètre.
+
+            * Si le chemin " .." est donné en paramètre, le nouveau dossier
+              sera le répertoire le répertoire précédent.
+
+          -> [0;32;49medit[0m : ouvre l'éditeur de texte pour permettre la modification du
+                fichier passé en paramètre.
+
+        ->  [0;31;49m* Pour enregistrer, il faut faire Control + x.[0m
+
+          -> [0;32;49madmin[0m : permet d'acceder à l'espace sécurisé de gestion du vaisseau.
+
+          -> [0;32;49mrm[0m : supprime le fichier passé en paramètre.
+
+          -> [0;32;49maide[0m : ouvre le centre d'aide.
+
+          -> [0;32;49mchmod[0m : modifie les permissions d'accès au fichier indiqué.
+
+            * Utilise la commande [0;32;49mchmod +r[0m pour te donner les droits de lecture du fichier.
+
+          -> [0;32;49mmail[0m : envoie un email au destinataire spécifié en paramètre
+
+          -> [0;32;49mstatus[0m : donne l'état du vaisseau (ne fonctionne que dans la partie gestion du vaisseau.)
+
+          -> [0;32;49mdestruction[0m : tente de détruire le vaisseau (ne fonctionne que dans la partie gestion du vaisseau.)

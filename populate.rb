@@ -5,6 +5,8 @@ def faker_analyse user
   f += "numero de carte bleue = #{user[:code_cb]}\n"
   f += "groupe sanguin = #{user[:blood]}\n"
   f += "activer les cameras = oui\n"
+  f += ""
+  f += "---------APPUIE_SUR_CTRL+X_POUR_QUITTER--------"
 end
 
 def new_user_class user

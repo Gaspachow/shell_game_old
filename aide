@@ -1,15 +1,12 @@
-                          __________________
-                        .-'  \ _.-''-._ /  '-.
-                      .-/\   .'.      .'.   /\-.
-                    _'/  \.'   '.  .'   './  \'_
-                    :======:======::======:======:
-                    '. '.  \     ''     /  .' .'
-                      '. .  \   :  :   /  . .'
-                        '.'  \  '  '  /  '.'
-                          ':  \:    :/  :'
-                            '. \    / .'
-                              '.\  /.'
-                                '\/'
+
+                              _,--=--._
+                            ,'    _    `.
+                           -    _(_)_o   -
+                      ____'    /_  _/]    `____
+               -=====::(+):::::::::::::::::(+)::=====-
+                        (+).""""""""""""",(+)
+                            .           ,
+                              `  -=-  '
 
 
                                 AIDE
@@ -26,7 +23,7 @@ En dernière partie, tu trouveras la liste des commnandes importantes que tu pou
 
 I / LES ETAPES
 
-- Aller dans le dossier `securite` et changer le mot de passe d'au moins un administrateur
+- Aller dans le dossier `securite` récupérer et changer le mot de passe d'au moins un administrateur
 
 - Aller dans le dossier `planetes` et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.
 
@@ -49,7 +46,6 @@ II / LES COMMANDES
   -> hint : donne des indices de ce qui devrait être fait dans ce dossier.
 
   -> cat : affiche sur le terminal le contenu du fichier passé en paramètre.
-
 
   -> ls : affiche l'ensemble des fichiers contenus dans le répertoire indiqué.
 
@@ -82,3 +78,5 @@ II / LES COMMANDES
   -> status : donne l'état du vaisseau (ne fonctionne que dans la partie gestion du vaisseau.)
 
   -> destruction : tente de détruire le vaisseau (ne fonctionne que dans la partie gestion du vaisseau.)
+
+                      (Appuie sur 'q' pour quitter)

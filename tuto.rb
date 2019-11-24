@@ -12,7 +12,7 @@ class Tuto
   def initialize
     @hint = Hint.new
     @help = HelpCommands.new
-    @auth_logins = ["Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas"]
+    @auth_logins = ["Appuis_sur_Control+X_pour_quitter", "Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas",]
     File.open("autorisations", "w+") {|f| f.puts @auth_logins.map {|l| l} }
     screen_clear
     first_part
@@ -52,7 +52,7 @@ class Tuto
 
     tuto_prompt("", "edit autorisations")
 
-    user_name = add_self_name.first.split(' ').first
+    user_name = (add_self_name.first.split(' ').first).tr('.,()\/;:"\'-_=+*&|!@%^()', '').downcase()
     new_user_class({ name: user_name, blood: "O+", code_cb: ((0...8).map { (65 + rand(26)) }.join), age: rand(11..16), :address=>"5399 Passage Mouffetard - 49560 - Toulouse", :phone=>"06 38 06 96 61"})
     $current_user = "User#{user_name.camelize}".constantize.new
 
@@ -69,7 +69,7 @@ class Tuto
           q.modify :downcase
         end
       end
-      if answer && answer.downcase == $current_user.name.downcase
+      if answer && answer.downcase.tr('.,()\/;:"\'-_=+*&|!@%^()', '') == $current_user.name.downcase
         break
       elsif answer && answer == "exit"
         exit
