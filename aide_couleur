@@ -54,7 +54,7 @@
           -> [0;32;49medit[0m : ouvre l'éditeur de texte pour permettre la modification du
                 fichier passé en paramètre.
 
-        ->  [0;31;49m* Pour enregistrer, il faut faire Control + x.[0m
+        ->  [0;31;49m* Pour enregistrer, il faut faire Control + X.[0m
 
           -> [0;32;49madmin[0m : permet d'acceder à l'espace sécurisé de gestion du vaisseau.
 

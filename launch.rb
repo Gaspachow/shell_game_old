@@ -69,7 +69,8 @@ $admins = [
   {:name=>"Yudda", :slug=>"yudda", :password=>"f52cabe"},
   {:name=>"Khoknuts", :slug=>"khoknuts", :password=>"9896128"},
   {:name=>"Gulxot", :slug=>"gulxot", :password=>"c27d749"},
-  {:name=>"Fodreas", :slug=>"fodreas", :password=>"17e128d"}
+  {:name=>"Fodreas", :slug=>"fodreas", :password=>"17e128d"},
+  {:name=>"Nicolas", :slug=>"nicolas", :password=>"sadiclaque"}
 ]
 
 def class_exists?(class_name)
