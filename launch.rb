@@ -209,6 +209,6 @@ end
 trap "INT" do end
 
 
-#uto.new
+Tuto.new
 @shell = Shell.new
 @shell.display
