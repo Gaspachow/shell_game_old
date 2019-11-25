@@ -4,7 +4,7 @@ class AdminPwdDir < FakeDir
   def initialize
     @path = "admin"
     @list = [
-      {name: "Mot de passe", slug: ".mdp", locked: true, removable: false, hidden: true, editable: false, kind: :file, content: "ovni1234"}
+      {name: "Mot de passe", slug: ".mdp", locked: true, removable: false, hidden: true, editable: false, kind: :file, content: "undefined"}
     ]
   end
 
@@ -21,7 +21,7 @@ class AdminPartDir < FakeDir
   attr_accessor :temperature_des_reacteurs, :systeme_de_refroidissement_enclanche, :aerations_ouvertes
   def initialize
     @path = "Gestion du vaisseau"
-    @password = "ovni1234"
+    @password = "undefined"
     @list = [
       {name: "Liste emails", slug: "liste_emails", kind: :file, removable: false, hidden: false, editable: true, locked: false, content: ""},
       {name: "Statut des composants", slug: "statut_composants", kind: :file, removable: false, hidden: false, locked: false, content: "", editable: true}

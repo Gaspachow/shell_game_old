@@ -70,11 +70,11 @@ class SecurityDir < FakeDir
     populate_admins
     @list = [
 			{:name=>"Root", :slug=>"root", :removable=>false, :locked=>false, :kind=>:dir, pwd_needed: true},
-			{:name=>"Root", :slug=>"root_mdp", :removable=>false, :locked=>false, :kind=>:file, pwd_needed: false, hidden: true},
+			{:name=>"Root", :slug=>".root_mdp", :removable=>false, :locked=>false, :kind=>:file, pwd_needed: false, hidden: true},
     ]
     @list.each { |l| l[:target] = "Admin#{l[:name]}".constantize.new}
 		@list.each { |l| l[:target].parent_dir = self }
-		@list.each { |l| l[:content] = "password1234"}
+		@list.each { |l| l[:content] = "E2R5"}
 
   end
 

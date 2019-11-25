@@ -12,7 +12,7 @@ class Tuto
   def initialize
     @hint = Hint.new
     @help = HelpCommands.new
-    @auth_logins = ["Appuis_sur_Control+X_pour_quitter", "Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas",]
+    @auth_logins = ["Appuis_sur_Control+X_pour_quitter", "Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas", "Nicolas","Root",]
     File.open("autorisations", "w+") {|f| f.puts @auth_logins.map {|l| l} }
     screen_clear
     first_part
