@@ -152,7 +152,6 @@ class Shell
     when 'edit'
       $current_dir.edit(cmd_args)
     when 'aide'
-      #system "less aide"
       File.write('aide_couleur', $help_dis.edit)
       system "less -r aide_couleur"
     when 'status'
@@ -167,6 +166,8 @@ class Shell
       $current_dir.mail(cmd_args)
     when '42'
       access_student
+    when 'progres'
+      $home_dir.progres
     when 'exit'
       puts "Au revoir !"
     else

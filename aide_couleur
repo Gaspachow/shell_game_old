@@ -12,7 +12,7 @@
                       
         
                   [0m[0;92;49m                                AIDE[0m[0;31;49m
-                                        Control + q pour quitter[0m
+                                        q pour quitter[0m
 
           Tu trouveras ici des informations qui t\'aideront pendant toute l\'enquête.
           
@@ -52,8 +52,7 @@
             * Si le chemin " .." est donné en paramètre, le nouveau dossier
               sera le répertoire le répertoire précédent.
 
-          -> [0;32;49medit[0m : ouvre l'éditeur de texte pour permettre la modification du
-                fichier passé en paramètre.
+          -> [0;32;49medit[0m : Permet d'editer un fichier
 
         ->  [0;31;49m* Pour enregistrer, il faut faire Control + x.[0m
 

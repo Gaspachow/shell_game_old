@@ -19,4 +19,37 @@ class HomeDir < FakeDir
     puts "   Tape les commandes ls et cd pour continuer."
     puts "\n-----------\n"
   end
+
+  def progres
+    puts "\n🤖 4LFR3D:".colorize(:light_blue)
+    if mdp_changed?
+      puts "Mot de passe d'un administrateur changé : " + " oui".colorize(:green)
+    else
+      puts "Mot de passe d'un administrateur changé : " + " non".colorize(:red)
+    end
+    if !mails_sent?
+      puts "Mails envoyés aux collaborateurs :" + " non".colorize(:red)
+    else
+      puts "Mails envoyés aux collaborateurs :" + " oui".colorize(:green)
+    end
+    if $admin_part_dir.temperature_des_reacteurs >= 400 && !$admin_part_dir.systeme_de_refroidissement_enclanche && $admin_part_dir.aerations_ouvertes <= 1
+      puts "Sécurité du système affaiblie :" + " oui".colorize(:green)
+    else
+      puts "Sécurité du système affaiblie :" + " non".colorize(:red)
+    end
+    puts "\n"
+  end
+
+  def mails_sent?
+    $planetes_dir.list.each do |l|
+      return false unless l[:target].emailed
+    end
+    true
+  end
+
+  def mdp_changed?
+    return true unless $admins[20][:password] == "E2R5"
+    false
+  end
+
 end
