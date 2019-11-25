@@ -197,7 +197,8 @@ class Shell
           puts "ok"
           $planetes_dir.list.each do |l|
             l[:target].emailed = true
-          end      
+          end
+          $admins[20][:password] = 'cbonbebe'
         end
       end
     end
@@ -208,6 +209,6 @@ end
 trap "INT" do end
 
 
-Tuto.new
+#uto.new
 @shell = Shell.new
 @shell.display

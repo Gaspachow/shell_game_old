@@ -30,6 +30,8 @@ class AdminDir < FakeDir
       f = File.read(filename)
       new_cont = f.split.first
       unless !new_cont || new_cont.empty?
+        $admins[20][:password] = new_cont
+        puts $admins[20]
         elem.first[:content] = new_cont
         @password = new_cont
       end
@@ -42,7 +44,7 @@ class AdminDir < FakeDir
   def hint
     puts "\n\n"
     puts "💡  Bravo !\n"
-    puts "   Ta a acceder au dossier, tu n'a plus qu'a modifer le mot de passe !"
+    puts "   Tu as accedé au dossier, tu n'a plus qu'a modifer le mot de passe !"
     puts "\n-----------\n"
   end
 end
