@@ -198,16 +198,24 @@ class Shell
       if pwd && pwd != "sadirac"
         puts "Mauvais mot de passe"
       else
-        if pwd == "sadirac"
-          puts "ok"
-          $planetes_dir.list.each do |l|
-            l[:target].emailed = true
-          end
+        step = $prompt.ask("A quelle etape voulez-vous sauter ?\n1 - Mot de passse\n2 - Mails\n3 - Securite\n -> ")
+        case step
+        when '1'
           $admins[20][:password] = 'cbonbebe'
+        when '2'
+          $admins[20][:password] = 'cbonbebe'
+          $planetes_dir.list.each { |l| l[:target].emailed = true }
+        when '3'
+          $admins[20][:password] = 'cbonbebe'
+          $planetes_dir.list.each { |l| l[:target].emailed = true }
+          $admin_part_dir.temperature_des_reacteurs = 1337
+          $admin_part_dir.systeme_de_refroidissement_enclanche = false
+          $admin_part_dir.aerations_ouvertes = 0
         end
       end
     end
   end
+
 
 end
 
@@ -216,6 +224,6 @@ trap "INT" do
 end
 
 
-Tuto.new unless ARGV[0] == "skip"
+Tuto.new unless (ARGV[0] == '--skip' || ARGV[0] == '-s')
 @shell = Shell.new
 @shell.display
