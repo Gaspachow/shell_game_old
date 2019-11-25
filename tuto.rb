@@ -12,7 +12,7 @@ class Tuto
   def initialize
     @hint = Hint.new
     @help = HelpCommands.new
-    @auth_logins = ["Appuis_sur_Control+X_pour_quitter", "Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas", "Nicolas","Root",]
+    @auth_logins = ["Vrezeok", "Krerrin", "Vrils", "Iktoks", "Daldrar", "Choldal", "Ghid", "Teivil", "Ruldeth", "Coknals", "Tenqids", "Korkeids", "Arkrils", "Ulmae", "Uval", "Yudda", "Khoknuts", "Gulxot", "Fodreas", "Nicolas","Root", "---------APPUIE_SUR_CTRL+X_POUR_QUITTER--------",]
     File.open("autorisations", "w+") {|f| f.puts @auth_logins.map {|l| l} }
     screen_clear
     first_part
@@ -39,7 +39,7 @@ class Tuto
       end
     end
     Whirly.start spinner: "random_dots" do
-      sleep 4
+      sleep 2
     end
     cursor.invisible {
       0.upto(5) { print "\r☠️   " ; sleep 0.4 ; print "\r     " ; sleep 0.4 }
@@ -52,7 +52,7 @@ class Tuto
 
     tuto_prompt("", "edit autorisations")
 
-    user_name = (add_self_name.first.split(' ').first).tr('.,()\/;:"\'-_=+*&|!@%^()', '').downcase()
+    user_name = (add_self_name.first.split(' ').first.downcase).tr('.,()\/;:"\'-_=+*&|!@%^()', '')
     new_user_class({ name: user_name, blood: "O+", code_cb: ((0...8).map { (65 + rand(26)) }.join), age: rand(11..16), :address=>"5399 Passage Mouffetard - 49560 - Toulouse", :phone=>"06 38 06 96 61"})
     $current_user = "User#{user_name.camelize}".constantize.new
 
@@ -78,7 +78,7 @@ class Tuto
     end
 
     Whirly.start spinner: "random_dots" do
-      sleep 4
+      sleep 2
     end
     screen_clear
     sleep 0.5
