@@ -15,7 +15,7 @@ class HelpCommand
         
                   ).colorize(:light_blue)
         ret += %q(                                AIDE).colorize(:light_green)
-        ret += "\n                                        Control + q pour quitter".colorize(:red)
+        ret += "\n                                        q pour quitter".colorize(:red)
         ret += %q(
 
           Tu trouveras ici des informations qui t\'aideront pendant toute l\'enquête.
@@ -55,8 +55,7 @@ class HelpCommand
             * Si le chemin " .." est donné en paramètre, le nouveau dossier
               sera le répertoire le répertoire précédent.
 
-          -> #{"edit".colorize(:green)} : ouvre l\'éditeur de texte pour permettre la modification du
-                fichier passé en paramètre.
+          -> #{"edit".colorize(:green)} : Permet d\'editer un fichier
 
         ->  #{"* Pour enregistrer, il faut faire Control + x.".colorize(:red)}
 
