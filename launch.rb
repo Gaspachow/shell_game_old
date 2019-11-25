@@ -216,6 +216,6 @@ trap "INT" do
 end
 
 
-Tuto.new
+Tuto.new unless ARGV[0] == "skip"
 @shell = Shell.new
 @shell.display
