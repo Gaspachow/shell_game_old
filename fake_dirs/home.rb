@@ -28,9 +28,9 @@ class HomeDir < FakeDir
       puts "Mot de passe d'un administrateur changé : " + " non".colorize(:red)
     end
     if !mails_sent?
-      puts "Mails envoyés aux collaborateurs :" + " non".colorize(:red)
+      puts "Mails envoyés aux planetes :" + " non".colorize(:red)
     else
-      puts "Mails envoyés aux collaborateurs :" + " oui".colorize(:green)
+      puts "Mails envoyés aux planetes :" + " oui".colorize(:green)
     end
     if $admin_part_dir.temperature_des_reacteurs >= 400 && !$admin_part_dir.systeme_de_refroidissement_enclanche && $admin_part_dir.aerations_ouvertes <= 1
       puts "Sécurité du système affaiblie :" + " oui".colorize(:green)
