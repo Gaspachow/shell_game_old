@@ -1,5 +1,6 @@
 [0;94;49m
 
+
                                                 _,--=--._
                                               ,'    _    `.
                                              -    _(_)_o   -
@@ -20,9 +21,9 @@
           En dernière partie, tu trouveras la liste des commnandes importantes que tu pourras utiliser.
 
     I / LES ETAPES
-        - Aller dans le dossier [0;32;49msecurite[0m, récupérer puis changer le mot de passe d'au moins un administrateur
+        - Aller dans le dossier [0;32;49msecurite[0m, récupérer puis changer le mot de passe de l'utilisateur [0;32;49mroot[0m.
 
-.        - Aller dans le dossier [0;32;49mplanetes[0m et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.
+        - Aller dans le dossier [0;32;49mplanetes[0m et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.
 
         - Aller dans le dossier [0;32;49madmin[0m et récupérer le mot de passe qui permettra d'accéder à la gestion du vaisseau.
 
@@ -54,7 +55,7 @@
           -> [0;32;49medit[0m : ouvre l'éditeur de texte pour permettre la modification du
                 fichier passé en paramètre.
 
-        ->  [0;31;49m* Pour enregistrer, il faut faire Control + X.[0m
+        ->  [0;31;49m* Pour enregistrer, il faut faire Control + x.[0m
 
           -> [0;32;49madmin[0m : permet d'acceder à l'espace sécurisé de gestion du vaisseau.
 

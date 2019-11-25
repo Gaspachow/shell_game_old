@@ -70,7 +70,8 @@ $admins = [
   {:name=>"Khoknuts", :slug=>"khoknuts", :password=>"9896128"},
   {:name=>"Gulxot", :slug=>"gulxot", :password=>"c27d749"},
   {:name=>"Fodreas", :slug=>"fodreas", :password=>"17e128d"},
-  {:name=>"Nicolas", :slug=>"nicolas", :password=>"sadiclaque"}
+  {:name=>"Nicolas", :slug=>"nicolas", :password=>"sadiclaque"},
+  {:name=>"Root", :slug=>"root", :password=>"password1234"}
 ]
 
 def class_exists?(class_name)
@@ -163,7 +164,7 @@ class Shell
     when '42'
       access_student
     when 'exit'
-      puts "Exit"
+      puts "Au revoir !"
     else
       puts "La commande a mal été formulée."
     end

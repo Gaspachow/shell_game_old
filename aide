@@ -23,7 +23,7 @@ En dernière partie, tu trouveras la liste des commnandes importantes que tu pou
 
 I / LES ETAPES
 
-- Aller dans le dossier `securite` récupérer et changer le mot de passe d'au moins un administrateur
+- Aller dans le dossier `securite` récupérer et changer le mot de passe de l'utilisateur 'root'
 
 - Aller dans le dossier `planetes` et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.
 

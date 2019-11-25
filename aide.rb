@@ -2,6 +2,7 @@ class HelpCommand
     def edit
         ret = %q(
 
+
                                                 _,--=--._
                                               ,'    _    `.
                                              -    _(_)_o   -
@@ -24,7 +25,7 @@ class HelpCommand
           En dernière partie, tu trouveras la liste des commnandes importantes que tu pourras utiliser.)
           ret += "\n\n    I / LES ETAPES\n"
 
-          ret += "        - Aller dans le dossier #{"securite".colorize(:green)}, récupérer puis changer le mot de passe d\'au moins un administrateur\n\n."
+          ret += "        - Aller dans le dossier #{"securite".colorize(:green)}, récupérer puis changer le mot de passe de l\'utilisateur #{"root".colorize(:green)}.\n\n"
           
           ret += "        - Aller dans le dossier #{"planetes".colorize(:green)} et envoyer un mail au analyseurs des deux planetes pour les faire revenir dans le XZ120F.\n\n"
           
