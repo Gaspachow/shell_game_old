@@ -18,7 +18,9 @@ Using only Shell to navigate between the different folders, the student will hav
 - You must have installed Ruby.
 - You must specify the path of you favourite text editor in the $EDITOR_PATH variable
 - Simply run the launch.rb file
-- Press Ctrl+D to stop the script
+- Type exit to stop the script
+- You can skip the tutorial with --skip (-s)
+- You can jump to steps with the cheatcode "42"
 
 ## Notes : ##
 

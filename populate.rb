@@ -6,7 +6,7 @@ def faker_analyse user
   f += "groupe sanguin = #{user[:blood]}\n"
   f += "activer les cameras = oui\n"
   f += ""
-  f += "---------APPUIE_SUR_CTRL+X_POUR_QUITTER--------"
+  f += "---------[ APPUIE SUR Control + x POUR QUITTER ]--------"
 end
 
 def new_user_class user

@@ -85,7 +85,7 @@ class HelpCommands
     h = "💻  Pour éditer un fichier, tape la commande ".colorize(:light_yellow) + "edit".colorize(:red) + " et le nom du fichier\n".colorize(:light_yellow)
     h += "   que tu veux éditer derrière. Par exemple :\n".colorize(:light_yellow)
 	h += "   edit #{file}".colorize(:red).italic
-	h += "\n\n   Tu peux fermer le fichier en tapant CTRL+X".colorize(:red)
+	h += "\n\n   Tu peux fermer le fichier en appuyant sur Control + x".colorize(:red)
 	h += "\n____________________________________________________________________________________________________________________________________________________________________________________\n\n\n".colorize(:light_black)
   end
 

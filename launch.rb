@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-# TODO: CTRL + C
 # TODO: EN | FR
 # TODO: only for camelize and constantize
 
